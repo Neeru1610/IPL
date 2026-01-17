@@ -1,5 +1,42 @@
 package com.edutech.progressive.service.impl;
 
-public class MatchServiceImplJdbc  {
+import java.util.List;
+
+import com.edutech.progressive.dao.MatchDAO;
+import com.edutech.progressive.entity.Match;
+import com.edutech.progressive.service.MatchService;
+
+public class MatchServiceImplJdbc implements MatchService {
+    private final MatchDAO matchDAO;
+    public MatchServiceImplJdbc(MatchDAO matchDAO) {
+        this.matchDAO = matchDAO;
+    }
+
+    @Override
+    public List<Match> getAllMatches() {
+        return null;
+    }
+
+    @Override
+    public Match getMatchById(int matchId) {
+        return null;
+    }
+
+    @Override
+    public Integer addMatch(Match match) {
+        return -1;
+    }
+
+    @Override
+    public void updateMatch(Match match) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'updateMatch'");
+    }
+
+    @Override
+    public void deleteMatch(int matchId) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deleteMatch'");
+    }
 
 }
